@@ -12,9 +12,9 @@ const deleteLogsAfter = 240 * time.Hour
 const downloadInSeconds = 10
 
 var (
-	activeWorkplaces  []Workplace
-	runningWorkplaces []Workplace
-	workplaceSync     sync.Mutex
+	activeDevices  []Device
+	runningDevices []Device
+	deviceSync     sync.Mutex
 )
 
 func main() {
@@ -26,15 +26,13 @@ func main() {
 	for {
 		start := time.Now()
 		LogInfo("MAIN", "Program running")
-		CheckDatabase()
-		CheckTables()
-		UpdateActiveWorkplaces("MAIN")
+		UpdateActiveDevices("MAIN")
 		DeleteOldLogFiles()
-		LogInfo("MAIN", "Active workplaces: "+strconv.Itoa(len(activeWorkplaces))+", running workplaces: "+strconv.Itoa(len(runningWorkplaces)))
-		for _, activeWorkplace := range activeWorkplaces {
-			activeWorkplaceIsRunning := CheckWorkplace(activeWorkplace)
-			if !activeWorkplaceIsRunning {
-				go RunWorkplace(activeWorkplace)
+		LogInfo("MAIN", "Active devices: "+strconv.Itoa(len(activeDevices))+", running devices: "+strconv.Itoa(len(runningDevices)))
+		for _, activeDevice := range activeDevices {
+			activeDeviceIsRunning := CheckDevice(activeDevice)
+			if !activeDeviceIsRunning {
+				go RunDevice(activeDevice)
 			}
 		}
 		if time.Since(start) < (downloadInSeconds * time.Second) {
@@ -45,64 +43,75 @@ func main() {
 	}
 }
 
-func CheckWorkplace(workplace Workplace) bool {
-	for _, runningWorkplace := range runningWorkplaces {
-		if runningWorkplace.Name == workplace.Name {
+func CheckDevice(device Device) bool {
+	for _, runningDevice := range runningDevices {
+		if runningDevice.Name == device.Name {
 			return true
 		}
 	}
 	return false
 }
 
-func RunWorkplace(workplace Workplace) {
-	LogInfo(workplace.Name, "Workplace started running")
-	workplaceSync.Lock()
-	runningWorkplaces = append(runningWorkplaces, workplace)
-	workplaceSync.Unlock()
-	workplaceIsActive := true
-	for workplaceIsActive {
+func RunDevice(device Device) {
+	LogInfo(device.Name, "Device started running")
+	deviceSync.Lock()
+	runningDevices = append(runningDevices, device)
+	deviceSync.Unlock()
+	deviceIsActive := true
+	var workplaceOid int := device.GetWorkplaceOid()
+	var devicePortOid int := device.GetDevicePortOid(workplaceOid)
+	for deviceIsActive {
 		start := time.Now()
-		intermediateData := workplace.AddData()
-		LogInfo(workplace.Name, "Download and sort of length "+strconv.Itoa(len(intermediateData))+" takes: "+time.Since(start).String())
-		ProcessData(&workplace, intermediateData)
-		LogInfo(workplace.Name, "Processing takes "+time.Since(start).String())
-		workplace.Sleep(start)
-		workplaceIsActive = CheckActive(workplace)
+		LogInfo(device.Name, "Device loop started")
+		var actualDevicePortStatus int := device.GetActualDevicePortStatus(devicePortOid)
+		var terminalInputIdleIsOpened bool := device.CheckForOpenTerminalInputIdle()
+		if actualDevicePortStatus == 1 && terminalInputIdleIsOpened {
+			device.CloseOpenTerminalInputIdle()
+		}
+		if actualDevicePortStatus == 0 && !terminalInputIdleIsOpened {
+			var workplaceIdleCycleTime int := device.GetWorkplaceIdleTime(workplaceOid)
+			var actualIdleCycleTime int := device.GetActualIdleCycleTime(devicePortOid)
+			if actualIdleCycleTime > workplaceIdleCycleTime {
+				 device.CreateTerminalInputIdle()
+			}
+		}
+		device.Sleep(start)
+		deviceIsActive = CheckActive(device)
 	}
-	RemoveWorkplaceFromRunningWorkplaces(workplace)
-	LogInfo(workplace.Name, "Workplace not active, stopped running")
+	RemoveDeviceFromRunningDevices(device)
+	LogInfo(device.Name, "Device not active, stopped running")
 
 }
 
-func CheckActive(workplace Workplace) bool {
-	for _, activeWorkplace := range activeWorkplaces {
-		if activeWorkplace.Name == workplace.Name {
-			LogInfo(workplace.Name, "Workplace still active")
+func CheckActive(device Device) bool {
+	for _, activeDevice := range activeDevices {
+		if activeDevice.Name == device.Name {
+			LogInfo(device.Name, "Device still active")
 			return true
 		}
 	}
-	LogInfo(workplace.Name, "Workplace not active")
+	LogInfo(device.Name, "Device not active")
 	return false
 }
 
-func RemoveWorkplaceFromRunningWorkplaces(workplace Workplace) {
-	for idx, runningWorkplace := range runningWorkplaces {
-		if workplace.Name == runningWorkplace.Name {
-			workplaceSync.Lock()
-			runningWorkplaces = append(runningWorkplaces[0:idx], runningWorkplaces[idx+1:]...)
-			workplaceSync.Unlock()
+func RemoveDeviceFromRunningDevices(device Device) {
+	for idx, runningDevice := range runningDevices {
+		if device.Name == runningDevice.Name {
+			deviceSync.Lock()
+			runningDevices = append(runningDevices[0:idx], runningDevices[idx+1:]...)
+			deviceSync.Unlock()
 		}
 	}
 }
 
-func UpdateActiveWorkplaces(reference string) {
+func UpdateActiveDevices(reference string) {
 	connectionString, dialect := CheckDatabaseType()
 	db, err := gorm.Open(dialect, connectionString)
 	if err != nil {
 		LogError(reference, "Problem opening "+DatabaseName+" database: "+err.Error())
-		activeWorkplaces = nil
+		activeDevices = nil
 		return
 	}
 	defer db.Close()
-	db.Find(&activeWorkplaces)
+	db.Where("DeviceType=?", 9).Find(&activeDevices)
 }
