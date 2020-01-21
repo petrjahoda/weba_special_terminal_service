@@ -58,21 +58,21 @@ func RunDevice(device Device) {
 	runningDevices = append(runningDevices, device)
 	deviceSync.Unlock()
 	deviceIsActive := true
-	var workplaceOid int := device.GetWorkplaceOid()
-	var devicePortOid int := device.GetDevicePortOid(workplaceOid)
+	var workplaceOid int = device.GetWorkplaceOid()
+	var devicePortOid int = device.GetDevicePortOid(workplaceOid)
 	for deviceIsActive {
 		start := time.Now()
 		LogInfo(device.Name, "Device loop started")
-		var actualDevicePortStatus int := device.GetActualDevicePortStatus(devicePortOid)
-		var terminalInputIdleIsOpened bool := device.CheckForOpenTerminalInputIdle()
+		var actualDevicePortStatus int = device.GetActualDevicePortStatus(devicePortOid)
+		var terminalInputIdleIsOpened bool = device.CheckForOpenTerminalInputIdle()
 		if actualDevicePortStatus == 1 && terminalInputIdleIsOpened {
 			device.CloseOpenTerminalInputIdle()
 		}
 		if actualDevicePortStatus == 0 && !terminalInputIdleIsOpened {
-			var workplaceIdleCycleTime int := device.GetWorkplaceIdleTime(workplaceOid)
-			var actualIdleCycleTime int := device.GetActualIdleCycleTime(devicePortOid)
+			var workplaceIdleCycleTime int = device.GetWorkplaceIdleTime(workplaceOid)
+			var actualIdleCycleTime int = device.GetActualIdleCycleTime(devicePortOid)
 			if actualIdleCycleTime > workplaceIdleCycleTime {
-				 device.CreateTerminalInputIdle()
+				device.CreateTerminalInputIdle()
 			}
 		}
 		device.Sleep(start)
