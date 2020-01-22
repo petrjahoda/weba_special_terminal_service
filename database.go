@@ -1,7 +1,6 @@
 package main
 
 import (
-	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 	_ "github.com/jinzhu/gorm/dialects/postgres"
 	"time"
@@ -13,122 +12,55 @@ type Device struct {
 	DeviceType int    `gorm:"column:DeviceType"`
 }
 
-type State struct {
-	gorm.Model
-	Name  string `gorm:"unique"`
-	Color string
-	Note  string
+func (Device) TableName() string {
+	return "device"
 }
-type WorkplaceSection struct {
-	gorm.Model
-	Name string `gorm:"unique"`
-	Note string
-}
+
 type Workplace struct {
-	gorm.Model
-	Name                   string `gorm:"unique"`
-	Code                   string
-	WorkplaceSectionId     uint
-	ActualStateId          uint
-	ActualStateDateTime    time.Time
-	ActualWorkplaceModeId  uint
-	ProductionPortValue    int
-	ProductionPortDateTime time.Time
-	PoweroffPortDateTime   time.Time
-	WorkplaceModes         []WorkplaceMode
-	WorkplacePorts         []WorkplacePort
-	Devices                []Device
-	Note                   string
+	OID          int    `gorm:"column:OID"`
+	Name         string `gorm:"column:Name"`
+	IdleFromTime int    `gorm:"column:IdleFromTime"`
+	DeviceID     string `gorm:"column:DeviceID"`
+}
+
+func (Workplace) TableName() string {
+	return "workplace"
 }
 
 type WorkplacePort struct {
-	gorm.Model
-	Name         string
-	DevicePortId uint
-	WorkplaceId  uint
-	LowValue     float32
-	HighValue    float32
-	Color        string
-	StateId      uint
-	Note         string
+	OID          int `gorm:"column:OID"`
+	DevicePortID int `gorm:"column:DevicePortID"`
+	WorkplaceID  int `gorm:"column:WorkplaceID"`
 }
 
-type WorkplaceState struct {
-	Id            uint `gorm:"primary_key"`
-	WorkplaceId   uint
-	StateId       uint
-	DateTimeStart time.Time
-	DateTimeEnd   time.Time
-	Interval      float32
-	Note          string
+func (WorkplacePort) TableName() string {
+	return "workplace_port"
 }
 
-type WorkplaceMode struct {
-	gorm.Model
-	Name             string `gorm:"unique"`
-	DowntimeInterval int
-	PoweroffInterval int
-	Note             string
+type DeviceInputDigital struct {
+	OID          int       `gorm:"column:OID;primary_key"`
+	DevicePortID int       `gorm:"column:DevicePortID"`
+	DT           time.Time `gorm:"column:DT"`
+	Data         int       `gorm:"column:Data"`
 }
 
-type DeviceType struct {
-	gorm.Model
-	Name string `gorm:"unique"`
-	Note string
+func (DeviceInputDigital) TableName() string {
+	return "device_input_digital"
 }
 
-type DevicePortType struct {
-	gorm.Model
-	Name string `gorm:"unique"`
-	Note string
+type TerminalInputIdle struct {
+	OID      int       `gorm:"column:OID;primary_key"`
+	DTS      time.Time `gorm:"column:DTS"`
+	DTE      time.Time `gorm:"column:DTE;default:'null'"`
+	IdleID   int       `gorm:"column:IdleID"`
+	UserID   int       `gorm:"column:UserID;default:'null'"`
+	Interval float32   `gorm:"column:Interval"`
+	DeviceID int       `gorm:"column:DeviceID"`
+	Note     string    `gorm:"column:Note"`
 }
 
-type Setting struct {
-	gorm.Model
-	Key     string `gorm:"unique"`
-	Value   string
-	Enabled bool
-	Note    string
-}
-
-type DevicePort struct {
-	gorm.Model
-	Name               string
-	Unit               string
-	PortNumber         int
-	DevicePortTypeId   uint
-	DeviceId           uint
-	ActualDataDateTime time.Time
-	ActualData         string
-	PlcDataType        string
-	PlcDataAddress     string
-	Settings           string
-	Virtual            bool
-	Note               string
-}
-
-type DeviceAnalogRecord struct {
-	Id           uint      `gorm:"primary_key"`
-	DevicePortId uint      `gorm:"unique_index:unique_analog_data"`
-	DateTime     time.Time `gorm:"unique_index:unique_analog_data"`
-	Data         float32
-	Interval     float32
-}
-
-type DeviceDigitalRecord struct {
-	Id           uint      `gorm:"primary_key"`
-	DevicePortId uint      `gorm:"unique_index:unique_digital_data"`
-	DateTime     time.Time `gorm:"unique_index:unique_digital_data"`
-	Data         int
-	Interval     float32
-}
-
-type DeviceSerialRecord struct {
-	Id           uint      `gorm:"primary_key"`
-	DevicePortId uint      `gorm:"unique_index:unique_serial_data"`
-	DateTime     time.Time `gorm:"unique_index:unique_serial_data"`
-	Data         float32
-	Interval     float32
+func (TerminalInputIdle) TableName() string {
+	return "terminal_input_idle"
 }
 
 func CheckDatabaseType() (string, string) {

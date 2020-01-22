@@ -1,0 +1,446 @@
+2020-01-22 09:40:10.615   Device1   INF   Device started running
+2020-01-22 09:40:10.621   Device1   INF   Assigned workplace ID: 0
+2020-01-22 09:40:10.621   Device1   INF   Device loop started
+2020-01-22 09:40:10.621   Device1   INF   Sleeping for 9.999912869s
+2020-01-22 09:41:13.480   Device1   INF   Device started running
+2020-01-22 09:41:13.484   Device1   INF   Assigned workplace ID: 0
+2020-01-22 09:41:13.484   Device1   INF   Device loop started
+2020-01-22 09:41:13.484   Device1   INF   Sleeping for 9.999895235s
+2020-01-22 09:42:34.352   Device1   INF   Device started running
+2020-01-22 09:42:34.359   Device1   INF   Assigned workplace ID: 1
+2020-01-22 09:42:34.359   Device1   INF   Device loop started
+2020-01-22 09:42:34.359   Device1   INF   Sleeping for 9.999895115s
+2020-01-22 09:46:47.431   Device1   INF   Device started running
+2020-01-22 09:46:47.436   Device1   INF   Assigned workplace ID: 1
+2020-01-22 09:46:47.440   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 09:46:47.440   Device1   INF   Device loop started
+2020-01-22 09:46:47.440   Device1   INF   Sleeping for 9.999915579s
+2020-01-22 09:50:15.580   Device1   INF   Device started running
+2020-01-22 09:50:15.585   Device1   INF   Assigned workplace ID: 1
+2020-01-22 09:50:15.589   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 09:50:15.590   Device1   INF   Device loop started
+2020-01-22 09:50:15.594   Device1   INF   Actual devicePort value: 1
+2020-01-22 09:50:15.594   Device1   INF   Sleeping for 9.995494763s
+2020-01-22 09:54:16.260   Device1   INF   Device started running
+2020-01-22 09:54:16.265   Device1   INF   Assigned workplace ID: 1
+2020-01-22 09:54:16.269   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 09:54:16.269   Device1   INF   Device loop started
+2020-01-22 09:54:16.273   Device1   INF   Actual devicePort value: 1
+2020-01-22 09:54:16.279   Device1   INF   Terminal idle opened: true
+2020-01-22 09:54:16.279   Device1   INF   Sleeping for 9.989678551s
+2020-01-22 09:54:48.606   Device1   INF   Device started running
+2020-01-22 09:54:48.611   Device1   INF   Assigned workplace ID: 1
+2020-01-22 09:54:48.616   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 09:54:48.616   Device1   INF   Device loop started
+2020-01-22 09:54:48.621   Device1   INF   Actual devicePort value: 1
+2020-01-22 09:54:48.626   Device1   INF   Terminal idle opened: true
+2020-01-22 09:54:48.626   Device1   INF   Sleeping for 9.990004845s
+2020-01-22 09:55:00.010   Device1   INF   Device started running
+2020-01-22 09:55:00.016   Device1   INF   Assigned workplace ID: 1
+2020-01-22 09:55:00.022   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 09:55:00.022   Device1   INF   Device loop started
+2020-01-22 09:55:00.028   Device1   INF   Actual devicePort value: 1
+2020-01-22 09:55:00.034   Device1   INF   Terminal idle opened: true
+2020-01-22 09:55:00.034   Device1   INF   Sleeping for 9.987534419s
+2020-01-22 09:55:08.345   Device1   INF   Device started running
+2020-01-22 09:55:08.351   Device1   INF   Assigned workplace ID: 1
+2020-01-22 09:55:08.356   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 09:55:08.356   Device1   INF   Device loop started
+2020-01-22 09:55:08.362   Device1   INF   Actual devicePort value: 1
+2020-01-22 09:55:08.366   Device1   INF   Terminal idle opened: true
+2020-01-22 09:55:08.366   Device1   INF   Sleeping for 9.990002308s
+2020-01-22 09:56:15.334   Device1   INF   Device started running
+2020-01-22 09:56:15.338   Device1   INF   Assigned workplace ID: 1
+2020-01-22 09:56:15.343   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 09:56:15.343   Device1   INF   Device loop started
+2020-01-22 09:56:15.347   Device1   INF   Actual devicePort value: 1
+2020-01-22 09:56:15.351   Device1   INF   Terminal idle opened: true
+2020-01-22 09:56:15.351   Device1   INF   Sleeping for 9.991359556s
+2020-01-22 09:56:40.566   Device1   INF   Device started running
+2020-01-22 09:56:40.571   Device1   INF   Assigned workplace ID: 1
+2020-01-22 09:56:40.576   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 09:56:40.576   Device1   INF   Device loop started
+2020-01-22 09:56:40.581   Device1   INF   Actual devicePort value: 1
+2020-01-22 09:56:40.586   Device1   INF   Terminal idle opened: true
+2020-01-22 09:56:40.586   Device1   INF   Sleeping for 9.989631305s
+2020-01-22 09:57:27.957   Device1   INF   Device started running
+2020-01-22 09:57:27.961   Device1   INF   Assigned workplace ID: 1
+2020-01-22 09:57:27.965   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 09:57:27.965   Device1   INF   Device loop started
+2020-01-22 09:57:27.970   Device1   INF   Actual devicePort value: 1
+2020-01-22 09:57:27.974   Device1   INF   Terminal idle opened: true
+2020-01-22 09:57:27.974   Device1   INF   Sleeping for 9.991033439s
+2020-01-22 09:57:34.285   Device1   INF   Device started running
+2020-01-22 09:57:34.290   Device1   INF   Assigned workplace ID: 1
+2020-01-22 09:57:34.296   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 09:57:34.296   Device1   INF   Device loop started
+2020-01-22 09:57:34.302   Device1   INF   Actual devicePort value: 1
+2020-01-22 09:57:34.307   Device1   INF   Terminal idle opened: true
+2020-01-22 09:57:34.307   Device1   INF   Sleeping for 9.98931826s
+2020-01-22 09:58:13.865   Device1   INF   Device started running
+2020-01-22 09:58:13.870   Device1   INF   Assigned workplace ID: 1
+2020-01-22 09:58:13.875   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 09:58:13.875   Device1   INF   Device loop started
+2020-01-22 09:58:13.880   Device1   INF   Actual devicePort value: 1
+2020-01-22 09:58:13.885   Device1   INF   Terminal idle opened: true
+2020-01-22 09:58:13.885   Device1   INF   Sleeping for 9.990602321s
+2020-01-22 09:58:34.143   Device1   INF   Device started running
+2020-01-22 09:58:34.147   Device1   INF   Assigned workplace ID: 1
+2020-01-22 09:58:34.151   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 09:58:34.151   Device1   INF   Device loop started
+2020-01-22 09:58:34.165   Device1   INF   Actual devicePort value: 0
+2020-01-22 09:58:34.170   Device1   INF   Terminal idle opened: true
+2020-01-22 09:58:34.170   Device1   INF   Sleeping for 9.980899225s
+2020-01-22 10:00:53.911   Device1   INF   Device started running
+2020-01-22 10:00:53.917   Device1   INF   Assigned workplace ID: 1
+2020-01-22 10:00:53.921   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 10:00:53.921   Device1   INF   Device loop started
+2020-01-22 10:00:53.926   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:00:53.930   Device1   INF   Terminal idle opened: true
+2020-01-22 10:00:53.930   Device1   INF   Sleeping for 9.990793828s
+2020-01-22 10:02:43.360   Device1   INF   Device started running
+2020-01-22 10:02:43.365   Device1   INF   Assigned workplace ID: 1
+2020-01-22 10:02:43.369   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 10:02:43.369   Device1   INF   Device loop started
+2020-01-22 10:02:43.373   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:02:43.379   Device1   INF   Terminal idle opened: true
+2020-01-22 10:02:43.379   Device1   INF   Sleeping for 9.990407172s
+2020-01-22 10:02:53.043   Device1   INF   Device started running
+2020-01-22 10:02:53.047   Device1   INF   Assigned workplace ID: 1
+2020-01-22 10:02:53.054   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 10:02:53.054   Device1   INF   Device loop started
+2020-01-22 10:02:53.058   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:02:53.064   Device1   INF   Terminal idle opened: true
+2020-01-22 10:02:53.064   Device1   INF   Sleeping for 9.989581269s
+2020-01-22 10:05:48.741   Device1   INF   Device started running
+2020-01-22 10:05:48.746   Device1   INF   Assigned workplace ID: 1
+2020-01-22 10:05:48.750   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 10:05:48.750   Device1   INF   Device loop started
+2020-01-22 10:05:48.754   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:05:48.758   Device1   INF   Terminal idle opened: true
+2020-01-22 10:05:48.758   Device1   INF   Sleeping for 9.991775808s
+2020-01-22 10:05:52.417   Device1   INF   Device started running
+2020-01-22 10:05:52.423   Device1   INF   Assigned workplace ID: 1
+2020-01-22 10:05:52.428   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 10:05:52.428   Device1   INF   Device loop started
+2020-01-22 10:05:52.435   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:05:52.442   Device1   INF   Terminal idle opened: true
+2020-01-22 10:05:52.442   Device1   INF   Sleeping for 9.985991578s
+2020-01-22 10:06:09.433   Device1   INF   Device started running
+2020-01-22 10:06:09.439   Device1   INF   Assigned workplace ID: 1
+2020-01-22 10:06:09.444   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 10:06:09.445   Device1   INF   Device loop started
+2020-01-22 10:06:09.449   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:06:09.453   Device1   INF   Terminal idle opened: true
+2020-01-22 10:06:09.453   Device1   INF   Sleeping for 9.991572019s
+2020-01-22 10:16:35.613   Device1   INF   Device started running
+2020-01-22 10:16:35.618   Device1   INF   Assigned workplace ID: 1
+2020-01-22 10:16:35.623   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 10:16:35.623   Device1   INF   Device loop started
+2020-01-22 10:16:35.627   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:16:35.632   Device1   INF   Terminal idle opened: true
+2020-01-22 10:16:35.640   Device1   INF   Sleeping for 9.983000878s
+2020-01-22 10:17:35.949   Device1   INF   Device started running
+2020-01-22 10:17:35.954   Device1   INF   Assigned workplace ID: 1
+2020-01-22 10:17:35.958   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 10:17:35.958   Device1   INF   Device loop started
+2020-01-22 10:17:35.963   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:17:35.967   Device1   INF   Terminal idle opened: true
+2020-01-22 10:17:35.974   Device1   INF   Sleeping for 9.984636158s
+2020-01-22 10:17:48.412   Device1   INF   Device started running
+2020-01-22 10:17:48.417   Device1   INF   Assigned workplace ID: 1
+2020-01-22 10:17:48.423   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 10:17:48.423   Device1   INF   Device loop started
+2020-01-22 10:17:48.428   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:17:48.433   Device1   INF   Terminal idle opened: true
+2020-01-22 10:17:48.439   Device1   INF   Sleeping for 9.983490738s
+2020-01-22 10:17:55.901   Device1   INF   Device started running
+2020-01-22 10:17:55.905   Device1   INF   Assigned workplace ID: 1
+2020-01-22 10:17:55.910   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 10:17:55.910   Device1   INF   Device loop started
+2020-01-22 10:17:55.915   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:17:55.920   Device1   INF   Terminal idle opened: true
+2020-01-22 10:17:55.928   Device1   INF   Sleeping for 9.98248244s
+2020-01-22 10:18:25.463   Device1   INF   Device started running
+2020-01-22 10:18:25.468   Device1   INF   Assigned workplace ID: 1
+2020-01-22 10:18:25.473   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 10:18:25.473   Device1   INF   Device loop started
+2020-01-22 10:18:25.478   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:18:25.482   Device1   INF   Terminal idle opened: true
+2020-01-22 10:18:25.489   Device1   INF   Sleeping for 9.984438049s
+2020-01-22 10:19:38.733   Device1   INF   Device started running
+2020-01-22 10:19:38.737   Device1   INF   Assigned workplace ID: 1
+2020-01-22 10:19:38.742   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 10:19:38.742   Device1   INF   Device loop started
+2020-01-22 10:19:38.746   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:19:38.750   Device1   INF   Terminal idle opened: true
+2020-01-22 10:19:38.759   Device1   INF   Sleeping for 9.983239625s
+2020-01-22 10:20:42.449   Device1   INF   Device started running
+2020-01-22 10:20:42.454   Device1   INF   Assigned workplace ID: 1
+2020-01-22 10:20:42.458   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 10:20:42.458   Device1   INF   Device loop started
+2020-01-22 10:20:42.463   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:20:42.468   Device1   INF   Terminal idle opened: true
+2020-01-22 10:20:42.474   Device1   INF   Sleeping for 9.983760014s
+2020-01-22 10:20:52.461   Device1   INF   Device still active
+2020-01-22 10:20:52.462   Device1   INF   Device loop started
+2020-01-22 10:20:52.467   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:20:52.471   Device1   INF   Terminal idle opened: true
+2020-01-22 10:20:52.477   Device1   INF   Sleeping for 9.984771209s
+2020-01-22 10:21:02.465   Device1   INF   Device still active
+2020-01-22 10:21:02.465   Device1   INF   Device loop started
+2020-01-22 10:21:02.470   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:21:02.474   Device1   INF   Terminal idle opened: true
+2020-01-22 10:21:02.480   Device1   INF   Sleeping for 9.985091062s
+2020-01-22 10:21:06.857   Device1   INF   Device started running
+2020-01-22 10:21:06.861   Device1   INF   Assigned workplace ID: 1
+2020-01-22 10:21:06.865   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 10:21:06.865   Device1   INF   Device loop started
+2020-01-22 10:21:06.868   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:21:06.876   Device1   INF   Terminal idle opened: true
+2020-01-22 10:21:06.884   Device1   INF   Sleeping for 9.980885471s
+2020-01-22 10:22:49.051   Device1   INF   Device started running
+2020-01-22 10:22:49.057   Device1   INF   Assigned workplace ID: 1
+2020-01-22 10:22:49.062   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 10:22:49.062   Device1   INF   Device loop started
+2020-01-22 10:22:49.066   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:22:49.071   Device1   INF   Terminal idle opened: true
+2020-01-22 10:22:49.078   Device1   INF   Sleeping for 9.983563428s
+2020-01-22 10:23:02.285   Device1   INF   Device started running
+2020-01-22 10:23:02.291   Device1   INF   Assigned workplace ID: 1
+2020-01-22 10:23:02.297   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 10:23:02.297   Device1   INF   Device loop started
+2020-01-22 10:23:02.302   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:23:02.307   Device1   INF   Terminal idle opened: true
+2020-01-22 10:23:02.314   Device1   INF   Sleeping for 9.983610433s
+2020-01-22 10:23:12.299   Device1   INF   Device still active
+2020-01-22 10:23:12.299   Device1   INF   Device loop started
+2020-01-22 10:23:12.304   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:23:12.309   Device1   INF   Terminal idle opened: true
+2020-01-22 10:23:12.315   Device1   INF   Sleeping for 9.983849822s
+2020-01-22 10:23:22.301   Device1   INF   Device still active
+2020-01-22 10:23:22.301   Device1   INF   Device loop started
+2020-01-22 10:23:22.306   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:23:22.310   Device1   INF   Terminal idle opened: true
+2020-01-22 10:23:22.317   Device1   INF   Sleeping for 9.983365383s
+2020-01-22 10:23:31.364   Device1   INF   Device started running
+2020-01-22 10:23:31.371   Device1   INF   Assigned workplace ID: 1
+2020-01-22 10:23:31.378   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 10:23:31.378   Device1   INF   Device loop started
+2020-01-22 10:23:31.383   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:23:31.390   Device1   INF   Terminal idle opened: true
+2020-01-22 10:23:31.401   Device1   INF   Sleeping for 9.976913986s
+2020-01-22 10:24:21.200   Device1   INF   Device started running
+2020-01-22 10:24:21.204   Device1   INF   Assigned workplace ID: 1
+2020-01-22 10:24:21.209   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 10:24:21.209   Device1   INF   Device loop started
+2020-01-22 10:24:21.213   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:24:21.218   Device1   INF   Terminal idle opened: true
+2020-01-22 10:24:21.225   Device1   INF   Sleeping for 9.983833458s
+2020-01-22 10:25:36.167   Device1   INF   Device started running
+2020-01-22 10:25:36.172   Device1   INF   Assigned workplace ID: 1
+2020-01-22 10:25:36.176   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 10:25:36.177   Device1   INF   Device loop started
+2020-01-22 10:25:36.181   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:25:36.185   Device1   INF   Terminal idle opened: true
+2020-01-22 10:25:36.193   Device1   INF   Sleeping for 9.984031263s
+2020-01-22 10:26:08.961   Device1   INF   Device started running
+2020-01-22 10:26:08.966   Device1   INF   Assigned workplace ID: 1
+2020-01-22 10:26:08.972   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 10:26:08.972   Device1   INF   Device loop started
+2020-01-22 10:26:08.977   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:26:08.981   Device1   INF   Terminal idle opened: true
+2020-01-22 10:26:08.989   Device1   INF   Sleeping for 9.983325024s
+2020-01-22 10:26:16.538   Device1   INF   Device started running
+2020-01-22 10:26:16.543   Device1   INF   Assigned workplace ID: 1
+2020-01-22 10:26:16.547   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 10:26:16.547   Device1   INF   Device loop started
+2020-01-22 10:26:16.556   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:26:16.561   Device1   INF   Terminal idle opened: false
+2020-01-22 10:26:16.561   Device1   INF   Sleeping for 9.985724214s
+2020-01-22 10:26:38.723   Device1   INF   Device started running
+2020-01-22 10:26:38.727   Device1   INF   Assigned workplace ID: 1
+2020-01-22 10:26:38.732   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 10:26:38.732   Device1   INF   Device loop started
+2020-01-22 10:26:38.736   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:26:38.742   Device1   INF   Terminal idle opened: true
+2020-01-22 10:26:38.749   Device1   INF   Sleeping for 9.982939711s
+2020-01-22 10:26:54.872   Device1   INF   Device started running
+2020-01-22 10:26:54.879   Device1   INF   Assigned workplace ID: 1
+2020-01-22 10:26:54.885   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 10:26:54.886   Device1   INF   Device loop started
+2020-01-22 10:26:54.891   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:26:54.896   Device1   INF   Terminal idle opened: true
+2020-01-22 10:26:54.903   Device1   INF   Sleeping for 9.982914385s
+2020-01-22 10:28:25.164   Device1   INF   Device started running
+2020-01-22 10:28:25.169   Device1   INF   Assigned workplace ID: 1
+2020-01-22 10:28:25.172   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 10:28:25.173   Device1   INF   Device loop started
+2020-01-22 10:28:25.177   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:28:25.182   Device1   INF   Terminal idle opened: false
+2020-01-22 10:28:25.183   Device1   INF   Sleeping for 9.989916767s
+2020-01-22 10:28:43.421   Device1   INF   Device started running
+2020-01-22 10:28:43.426   Device1   INF   Assigned workplace ID: 1
+2020-01-22 10:28:43.431   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 10:28:43.431   Device1   INF   Device loop started
+2020-01-22 10:28:43.435   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:28:43.439   Device1   INF   Terminal idle opened: false
+2020-01-22 10:28:43.439   Device1   INF   Sleeping for 9.991543306s
+2020-01-22 10:30:53.967   Device1   INF   Device started running
+2020-01-22 10:30:53.972   Device1   INF   Assigned workplace ID: 1
+2020-01-22 10:30:53.977   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 10:30:53.977   Device1   INF   Device loop started
+2020-01-22 10:30:53.982   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:30:53.986   Device1   INF   Terminal idle opened: false
+2020-01-22 10:30:53.986   Device1   INF   Sleeping for 9.990519445s
+2020-01-22 10:31:27.173   Device1   INF   Device started running
+2020-01-22 10:31:27.178   Device1   INF   Assigned workplace ID: 1
+2020-01-22 10:31:27.184   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 10:31:27.184   Device1   INF   Device loop started
+2020-01-22 10:31:27.188   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:31:27.194   Device1   INF   Terminal idle opened: false
+2020-01-22 10:31:27.194   Device1   INF   Sleeping for 9.989965454s
+2020-01-22 10:31:39.234   Device1   INF   Device started running
+2020-01-22 10:31:39.238   Device1   INF   Assigned workplace ID: 1
+2020-01-22 10:31:39.242   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 10:31:39.242   Device1   INF   Device loop started
+2020-01-22 10:31:39.246   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:31:39.251   Device1   INF   Terminal idle opened: true
+2020-01-22 10:31:39.258   Device1   INF   Sleeping for 9.983858716s
+2020-01-22 10:34:53.526   Device1   INF   Device started running
+2020-01-22 10:34:53.531   Device1   INF   Assigned workplace ID: 1
+2020-01-22 10:34:53.535   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 10:34:53.535   Device1   INF   Device loop started
+2020-01-22 10:34:53.541   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:34:53.544   Device1   INF   Terminal idle opened: false
+2020-01-22 10:34:53.545   Device1   INF   Sleeping for 9.99085113s
+2020-01-22 10:35:04.354   Device1   INF   Device started running
+2020-01-22 10:35:04.359   Device1   INF   Assigned workplace ID: 1
+2020-01-22 10:35:04.363   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 10:35:04.363   Device1   INF   Device loop started
+2020-01-22 10:35:04.367   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:35:04.372   Device1   INF   Terminal idle opened: true
+2020-01-22 10:35:04.372   Device1   INF   Closing idle
+2020-01-22 10:35:04.379   Device1   INF   Sleeping for 9.984457006s
+2020-01-22 10:35:14.365   Device1   INF   Device still active
+2020-01-22 10:35:14.365   Device1   INF   Device loop started
+2020-01-22 10:35:14.371   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:35:14.377   Device1   INF   Terminal idle opened: false
+2020-01-22 10:35:14.377   Device1   INF   Sleeping for 9.98747305s
+2020-01-22 10:36:03.992   Device1   INF   Device started running
+2020-01-22 10:36:03.998   Device1   INF   Assigned workplace ID: 1
+2020-01-22 10:36:04.002   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 10:36:04.002   Device1   INF   Device loop started
+2020-01-22 10:36:04.008   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:36:04.015   Device1   INF   Terminal idle opened: true
+2020-01-22 10:36:04.015   Device1   INF   Closing idle
+2020-01-22 10:36:04.024   Device1   INF   Idle closed
+2020-01-22 10:36:04.024   Device1   INF   Sleeping for 9.97772151s
+2020-01-22 10:36:46.828   Device1   INF   Device started running
+2020-01-22 10:36:46.833   Device1   INF   Assigned workplace ID: 1
+2020-01-22 10:36:46.839   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 10:36:46.839   Device1   INF   Device loop started
+2020-01-22 10:36:46.843   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:36:46.849   Device1   INF   Terminal idle opened: true
+2020-01-22 10:36:46.849   Device1   INF   Closing idle
+2020-01-22 10:36:46.858   Device1   INF   Idle closed
+2020-01-22 10:36:46.858   Device1   INF   Sleeping for 9.980953345s
+2020-01-22 10:36:56.841   Device1   INF   Device still active
+2020-01-22 10:36:56.841   Device1   INF   Device loop started
+2020-01-22 10:36:56.846   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:36:56.851   Device1   INF   Terminal idle opened: false
+2020-01-22 10:36:56.851   Device1   INF   Sleeping for 9.989709342s
+2020-01-22 10:37:06.845   Device1   INF   Device still active
+2020-01-22 10:37:06.845   Device1   INF   Device loop started
+2020-01-22 10:37:06.852   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:37:06.858   Device1   INF   Terminal idle opened: false
+2020-01-22 10:37:06.858   Device1   INF   Sleeping for 9.986895s
+2020-01-22 10:37:16.848   Device1   INF   Device still active
+2020-01-22 10:37:16.848   Device1   INF   Device loop started
+2020-01-22 10:37:16.855   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:37:16.860   Device1   INF   Terminal idle opened: false
+2020-01-22 10:37:16.860   Device1   INF   Sleeping for 9.987942678s
+2020-01-22 10:37:26.852   Device1   INF   Device still active
+2020-01-22 10:37:26.852   Device1   INF   Device loop started
+2020-01-22 10:37:26.858   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:37:26.863   Device1   INF   Terminal idle opened: false
+2020-01-22 10:37:26.863   Device1   INF   Sleeping for 9.988615118s
+2020-01-22 10:37:36.854   Device1   INF   Device still active
+2020-01-22 10:37:36.854   Device1   INF   Device loop started
+2020-01-22 10:37:36.860   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:37:36.865   Device1   INF   Terminal idle opened: false
+2020-01-22 10:37:36.865   Device1   INF   Sleeping for 9.988884226s
+2020-01-22 10:37:46.858   Device1   INF   Device still active
+2020-01-22 10:37:46.858   Device1   INF   Device loop started
+2020-01-22 10:37:46.865   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:37:46.869   Device1   INF   Terminal idle opened: false
+2020-01-22 10:37:46.869   Device1   INF   Sleeping for 9.988992899s
+2020-01-22 10:38:12.410   Device1   INF   Device started running
+2020-01-22 10:38:12.414   Device1   INF   Assigned workplace ID: 1
+2020-01-22 10:38:12.419   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 10:38:12.419   Device1   INF   Device loop started
+2020-01-22 10:38:12.423   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:38:12.428   Device1   INF   Terminal idle opened: false
+2020-01-22 10:38:12.428   Device1   INF   Sleeping for 9.991251778s
+2020-01-22 10:38:29.315   Device1   INF   Device started running
+2020-01-22 10:38:29.320   Device1   INF   Assigned workplace ID: 1
+2020-01-22 10:38:29.324   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 10:38:29.324   Device1   INF   Device loop started
+2020-01-22 10:38:29.329   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:38:29.333   Device1   INF   Terminal idle opened: false
+2020-01-22 10:38:29.333   Device1   INF   Sleeping for 9.990801528s
+2020-01-22 10:38:38.707   Device1   INF   Device started running
+2020-01-22 10:38:38.713   Device1   INF   Assigned workplace ID: 1
+2020-01-22 10:38:38.719   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 10:38:38.719   Device1   INF   Device loop started
+2020-01-22 10:38:38.723   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:38:38.727   Device1   INF   Terminal idle opened: false
+2020-01-22 10:38:38.727   Device1   INF   Sleeping for 9.991407081s
+2020-01-22 10:40:05.062   Device1   INF   Device started running
+2020-01-22 10:40:05.067   Device1   INF   Assigned workplace ID: 1
+2020-01-22 10:40:05.071   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 10:40:05.071   Device1   INF   Device loop started
+2020-01-22 10:40:05.077   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:40:05.082   Device1   INF   Terminal idle opened: false
+2020-01-22 10:40:05.082   Device1   INF   Sleeping for 9.989874571s
+2020-01-22 10:41:13.779   Device1   INF   Device started running
+2020-01-22 10:41:13.786   Device1   INF   Assigned workplace ID: 1
+2020-01-22 10:41:13.792   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 10:41:13.792   Device1   INF   Device loop started
+2020-01-22 10:41:13.804   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:41:13.809   Device1   INF   Terminal idle opened: false
+2020-01-22 10:41:13.809   Device1   INF   Sleeping for 9.983077319s
+2020-01-22 10:41:27.256   Device1   INF   Device started running
+2020-01-22 10:41:27.261   Device1   INF   Assigned workplace ID: 1
+2020-01-22 10:41:27.266   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 10:41:27.266   Device1   INF   Device loop started
+2020-01-22 10:41:27.271   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:41:27.275   Device1   INF   Terminal idle opened: false
+2020-01-22 10:41:27.276   Device1   INF   Sleeping for 9.990395123s
+2020-01-22 10:41:37.271   Device1   INF   Device still active
+2020-01-22 10:41:37.271   Device1   INF   Device loop started
+2020-01-22 10:41:37.277   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:41:37.283   Device1   INF   Terminal idle opened: false
+2020-01-22 10:41:37.283   Device1   INF   Sleeping for 9.988591708s
+2020-01-22 10:41:47.273   Device1   INF   Device still active
+2020-01-22 10:41:47.273   Device1   INF   Device loop started
+2020-01-22 10:41:47.282   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:41:47.286   Device1   INF   Terminal idle opened: false
+2020-01-22 10:41:47.287   Device1   INF   Sleeping for 9.986713866s
+2020-01-22 10:41:57.274   Device1   INF   Device still active
+2020-01-22 10:41:57.274   Device1   INF   Device loop started
+2020-01-22 10:41:57.279   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:41:57.285   Device1   INF   Terminal idle opened: false
+2020-01-22 10:41:57.285   Device1   INF   Sleeping for 9.989027329s
+2020-01-22 10:42:07.275   Device1   INF   Device still active
+2020-01-22 10:42:07.275   Device1   INF   Device loop started
+2020-01-22 10:42:07.281   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:42:07.286   Device1   INF   Terminal idle opened: false
+2020-01-22 10:42:07.286   Device1   INF   Sleeping for 9.988968752s
+2020-01-22 10:42:55.049   Device1   INF   Device started running
+2020-01-22 10:42:55.053   Device1   INF   Assigned workplace ID: 1
+2020-01-22 10:42:55.057   Device1   INF   Assigned devicePort ID: 1
+2020-01-22 10:42:55.057   Device1   INF   Device loop started
+2020-01-22 10:42:55.061   Device1   INF   Actual devicePort value: 1
+2020-01-22 10:42:55.066   Device1   INF   Terminal idle opened: false
+2020-01-22 10:42:55.066   Device1   INF   Sleeping for 9.991484329s

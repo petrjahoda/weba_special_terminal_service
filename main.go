@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-const version = "2019.4.3.31"
+const version = "2020.1.1.22"
 const deleteLogsAfter = 240 * time.Hour
 const downloadInSeconds = 10
 
@@ -58,21 +58,28 @@ func RunDevice(device Device) {
 	runningDevices = append(runningDevices, device)
 	deviceSync.Unlock()
 	deviceIsActive := true
-	var workplaceOid int = device.GetWorkplaceOid()
-	var devicePortOid int = device.GetDevicePortOid(workplaceOid)
+	workplaceOid := device.GetWorkplaceOid()
+	LogInfo(device.Name, "Assigned workplace ID: "+strconv.Itoa(workplaceOid))
+	devicePortOid := device.GetDevicePortOid(workplaceOid)
+	LogInfo(device.Name, "Assigned devicePort ID: "+strconv.Itoa(devicePortOid))
 	for deviceIsActive {
 		start := time.Now()
 		LogInfo(device.Name, "Device loop started")
-		var actualDevicePortStatus int = device.GetActualDevicePortStatus(devicePortOid)
-		var terminalInputIdleIsOpened bool = device.CheckForOpenTerminalInputIdle()
-		if actualDevicePortStatus == 1 && terminalInputIdleIsOpened {
-			device.CloseOpenTerminalInputIdle()
+		actualDevicePortValue := device.GetActualDevicePortValue(devicePortOid)
+		LogInfo(device.Name, "Actual devicePort value: "+strconv.Itoa(actualDevicePortValue))
+		openTerminalIdleFound := device.CheckForOpenTerminalIdle()
+		LogInfo(device.Name, "Terminal idle opened: "+strconv.FormatBool(openTerminalIdleFound))
+		if actualDevicePortValue == 1 && openTerminalIdleFound {
+			device.CloseTerminalIdle()
 		}
-		if actualDevicePortStatus == 0 && !terminalInputIdleIsOpened {
-			var workplaceIdleCycleTime int = device.GetWorkplaceIdleTime(workplaceOid)
-			var actualIdleCycleTime int = device.GetActualIdleCycleTime(devicePortOid)
-			if actualIdleCycleTime > workplaceIdleCycleTime {
-				device.CreateTerminalInputIdle()
+		if actualDevicePortValue == 0 && !openTerminalIdleFound {
+			defaultIdleDuration := device.GetDefaultIdleDuration(workplaceOid)
+			LogInfo(device.Name, "Workplace idleTime : "+strconv.Itoa(defaultIdleDuration))
+			actualIdleDuration := device.GetActualIdleDuration(devicePortOid)
+			LogInfo(device.Name, "Actual idleTime    : "+strconv.Itoa(actualIdleDuration))
+			if actualIdleDuration > defaultIdleDuration {
+				LogInfo(device.Name, "Actual idleTime is bigger than workplace idleTime")
+				device.CreateTerminalIdle()
 			}
 		}
 		device.Sleep(start)
