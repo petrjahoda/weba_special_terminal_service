@@ -3,6 +3,7 @@
 
 ## Installation
 * use windows executable located in windows folder
+* install using nssm
 
 ## Description
 Go service that creates and closes idle for device with id = 9
