@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-const version = "2020.1.1.22"
+const version = "2020.2.2.15"
 const deleteLogsAfter = 240 * time.Hour
 const downloadInSeconds = 10
 

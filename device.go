@@ -35,7 +35,7 @@ func (device Device) CloseTerminalIdle() {
 	defer db.Close()
 	var terminalInputIdle TerminalInputIdle
 	db.Where("DTE is null").Where("DeviceID = ?", device.OID).First(&terminalInputIdle)
-	db.Model(&terminalInputIdle).Where("OID =?", terminalInputIdle.OID).UpdateColumns(TerminalInputIdle{DTE: time.Now()})
+	db.Model(&terminalInputIdle).Where("OID =?", terminalInputIdle.OID).UpdateColumns(TerminalInputIdle{DTE: time.Now(), Interval: float32(time.Since(terminalInputIdle.DTS).Seconds())})
 	LogInfo(device.Name, "Idle closed")
 
 }
