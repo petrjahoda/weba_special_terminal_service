@@ -9,11 +9,11 @@ func (device Device) CreateTerminalIdle() {
 	LogInfo(device.Name, "Creating idle")
 	connectionString, dialect := CheckDatabaseType()
 	db, err := gorm.Open(dialect, connectionString)
+	defer db.Close()
 	if err != nil {
 		LogError(device.Name, "Problem opening "+DatabaseName+" database: "+err.Error())
 		return
 	}
-	defer db.Close()
 	var terminalInputIdle TerminalInputIdle
 	terminalInputIdle.DTS = time.Now()
 	terminalInputIdle.IdleID = 1
@@ -28,11 +28,11 @@ func (device Device) CloseTerminalIdle() {
 	LogInfo(device.Name, "Closing idle")
 	connectionString, dialect := CheckDatabaseType()
 	db, err := gorm.Open(dialect, connectionString)
+	defer db.Close()
 	if err != nil {
 		LogError(device.Name, "Problem opening "+DatabaseName+" database: "+err.Error())
 		return
 	}
-	defer db.Close()
 	var terminalInputIdle TerminalInputIdle
 	db.Where("DTE is null").Where("DeviceID = ?", device.OID).First(&terminalInputIdle)
 	db.Model(&terminalInputIdle).Where("OID =?", terminalInputIdle.OID).UpdateColumns(TerminalInputIdle{DTE: time.Now(), Interval: float32(time.Since(terminalInputIdle.DTS).Seconds())})
@@ -43,11 +43,11 @@ func (device Device) CloseTerminalIdle() {
 func (device Device) GetActualIdleDuration(devicePortId int) int {
 	connectionString, dialect := CheckDatabaseType()
 	db, err := gorm.Open(dialect, connectionString)
+	defer db.Close()
 	if err != nil {
 		LogError(device.Name, "Problem opening "+DatabaseName+" database: "+err.Error())
 		return 0
 	}
-	defer db.Close()
 	var deviceInputDigital DeviceInputDigital
 	db.Where("DevicePortID=?", devicePortId).Last(&deviceInputDigital)
 	return int(time.Now().Sub(deviceInputDigital.DT).Seconds())
@@ -56,11 +56,11 @@ func (device Device) GetActualIdleDuration(devicePortId int) int {
 func (device Device) GetDefaultIdleDuration(workplaceId int) int {
 	connectionString, dialect := CheckDatabaseType()
 	db, err := gorm.Open(dialect, connectionString)
+	defer db.Close()
 	if err != nil {
 		LogError(device.Name, "Problem opening "+DatabaseName+" database: "+err.Error())
 		return 0
 	}
-	defer db.Close()
 	var workplace Workplace
 	db.Where("OID=?", workplaceId).Find(&workplace)
 	return workplace.IdleFromTime
@@ -69,11 +69,11 @@ func (device Device) GetDefaultIdleDuration(workplaceId int) int {
 func (device Device) CheckForOpenTerminalIdle() bool {
 	connectionString, dialect := CheckDatabaseType()
 	db, err := gorm.Open(dialect, connectionString)
+	defer db.Close()
 	if err != nil {
 		LogError(device.Name, "Problem opening "+DatabaseName+" database: "+err.Error())
 		return false
 	}
-	defer db.Close()
 	var terminalInputIdle TerminalInputIdle
 	db.Where("DTE is null").Where("DeviceID = ?", device.OID).Find(&terminalInputIdle)
 	return terminalInputIdle.OID > 0
@@ -82,11 +82,11 @@ func (device Device) CheckForOpenTerminalIdle() bool {
 func (device Device) GetActualDevicePortValue(devicePortId int) int {
 	connectionString, dialect := CheckDatabaseType()
 	db, err := gorm.Open(dialect, connectionString)
+	defer db.Close()
 	if err != nil {
 		LogError(device.Name, "Problem opening "+DatabaseName+" database: "+err.Error())
 		return 0
 	}
-	defer db.Close()
 	var deviceInputDigital DeviceInputDigital
 	db.Where("DevicePortID=?", devicePortId).Last(&deviceInputDigital)
 	return deviceInputDigital.Data
@@ -95,11 +95,11 @@ func (device Device) GetActualDevicePortValue(devicePortId int) int {
 func (device Device) GetDevicePortOid(workplaceID int) int {
 	connectionString, dialect := CheckDatabaseType()
 	db, err := gorm.Open(dialect, connectionString)
+	defer db.Close()
 	if err != nil {
 		LogError(device.Name, "Problem opening "+DatabaseName+" database: "+err.Error())
 		return 0
 	}
-	defer db.Close()
 	var workplacePort WorkplacePort
 	db.Where("WorkplaceID=?", workplaceID).Find(&workplacePort)
 	return workplacePort.DevicePortID
@@ -108,11 +108,11 @@ func (device Device) GetDevicePortOid(workplaceID int) int {
 func (device Device) GetWorkplaceOid() int {
 	connectionString, dialect := CheckDatabaseType()
 	db, err := gorm.Open(dialect, connectionString)
+	defer db.Close()
 	if err != nil {
 		LogError(device.Name, "Problem opening "+DatabaseName+" database: "+err.Error())
 		return 0
 	}
-	defer db.Close()
 	var workplace Workplace
 	db.Where("DeviceID=?", device.OID).Find(&workplace)
 	return workplace.OID
