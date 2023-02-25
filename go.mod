@@ -11,6 +11,5 @@ require (
 	github.com/lib/pq v1.5.2 // indirect
 	github.com/mattn/go-colorable v0.1.6 // indirect
 	golang.org/x/crypto v0.0.0-20200510223506-06a226fb4e37 // indirect
-	golang.org/x/sys v0.0.0-20200515095857-1151b9dac4a9 // indirect
-	google.golang.org/appengine v1.6.6 // indirect
+	golang.org/x/sys v0.1.0 // indirect
 )
